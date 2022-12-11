@@ -263,6 +263,21 @@
 
 @media only screen and (min-width: 300px) and (max-width: 767px){
 
+  .navbar-nav{
+    background: rgb(14, 13, 13);
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .navbar-nav .nav-link{
+    padding: 7px;
+  }
+  .container-fluid{
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #logo-box > a{
     font-size: 1rem;
     padding-left: 10px;
@@ -309,10 +324,6 @@
   #home-section > #date-counter > h4{
     font-size: 1rem;
     padding: 10px;
-  }
-
-  #our-department{
-    height: auto;
   }
 
   .slider{
@@ -377,20 +388,25 @@
   /* Avionics.html */
 
   #avioncis-intro{
+    height: auto;
     flex-direction: column-reverse;
   }
 
   #avionics-left-box{
     width: 100%;
-    height: 55vh;
+    margin-top: 30px;
   }
 
   #avioncis-intro > img{
-    width: 80%;
-    height: 20%;
+    width: 60%;
+    height: 200px;
+    /* height: 20%; */
     margin: 0;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 0;
+  }
+  #avionics-member{
+    margin-top: 50px;
   }
 
   .avionics-slider{
@@ -448,6 +464,10 @@
       margin-top: 10px;
   }
 
+  #design-member{
+    margin-top: 80px;
+  }
+
   #design-member > h1{
     padding-top: 0;
   }
@@ -462,6 +482,7 @@
     /* Media.html */
 
     #media-intro{
+      height: 130vh;
       align-items: flex-start;
     }
 
@@ -469,6 +490,13 @@
       width: 90%;
     }
 
+    #media-department{
+      height: auto;
+    }
+
+    #media-member{
+      margin-top: 50px;
+    }
 
     /* Achievements.html */
 
