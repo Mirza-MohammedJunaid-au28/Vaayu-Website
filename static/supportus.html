@@ -44,7 +44,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./avionics.html">Avionics</a></li>
                             <li><a class="dropdown-item" href="./design.html">Design</a></li>
-                            <li><a class="dropdown-item" href="#">M & M</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">M & M</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -60,9 +60,26 @@
     <main>
         <section id="supportUs-section">
             <h1 id="support-heading">Support Us</h1>
-            <div id="scanner-img">
-                <img src="../assets/img/scanner.jpeg" id="scanner-img" alt="scanner"> <br>
-                <a href="../assets/img/scanner.jpeg" class="support-btn" download>Download Scanner</a>
+            <div id="support-details">
+                <div id="scanner-img">
+                    <h2>Team Captain</h2>
+                    <img src="../assets/img/scanner.jpg" id="scanner-img" alt="scanner"> <br>
+                    <a href="../assets/img/scanner.jpg" class="support-btn" download>Download Scanner</a>
+                    <div id="upiId">
+                        <p id="upi">UPI ID : piyushjogale17@oksbi</p>
+                        <button id="copy-upi">Copy</button>
+                    </div>
+                </div>
+                <div id="bank-details">
+                    <h2>Bank Details</h2>
+                    <div id="bank-det">
+                        <p>Name: Piyush Santosh Jogale</p>
+                        <p>Bank name: State Bank Of India</p>
+                        <p>Acc no: 42039439178</p>
+                        <p>IFSC code: SBIN0071097</p>
+                        <p>Branch: Evershine City</p>
+                    </div>
+                </div>
             </div>
             <h1 class="support-quote">" The greatest good is what <br> we do for one another " <br>
             <span class="support-quote1">~ Mother Teresa</span></h1>
@@ -101,7 +118,7 @@
                 </div>
 
                 <h5 class="further-info">For further information, check our brochure : </h5>
-                <a href="../assets/Team_Vaayushastra_Brochure_22-23.pdf" class="support-btn" download>Download our brochure</a>
+                <a href="../assets/Team Vaayushastra Brochure 24'.pdf" class="support-btn" download>Download our brochure</a>
             </div>
         </section>
     </main>
@@ -109,4 +126,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script>
+    const upiId = 'piyushjogale17@oksbi'
+    const copy_upi_btn = document.getElementById('copy-upi');
+
+    copy_upi_btn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(upiId);
+    copy_upi_btn.innerText = 'Copied'
+    setTimeout(()=>{
+        copy_upi_btn.innerText = 'Copy'
+    },3000)
+})
+</script>
 </html>

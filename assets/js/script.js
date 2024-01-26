@@ -1,5 +1,5 @@
 const counter = document.getElementById('counter');
-let endDate = new Date(2023, 02, 10, 05, 30);
+let endDate = new Date(2024, 03, 10, 05, 30);
 let endTime = endDate.getTime();
 
 function countdown() {
